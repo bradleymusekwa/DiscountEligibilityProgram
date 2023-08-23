@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Eligibility</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/image/javascript-logo-24.png" type="image/x-icon">
+</head>
+<body>
+   
+
+   <section class="container">
+    <form id="my_form">
+        <div class="login-container" id="login">
+        <div class="heading">
+            <header>Let's check if you're eligible for a discount.</header>
+        </div>
+        <div id="msg"></div>
+        <div class="input-box">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name" class="input-field">
+            <i class='bx bx-user'></i>
+        </div>
+        <div class="input-box">
+            <label for="email"></label>
+            <input type="number" id="age" placeholder="Age" class="input-field">
+            <i class='bx bx-face'></i>
+        </div>
+        <div class="two-col">
+            <div class="one">
+                <input type="checkbox" id="member" name="member">
+                <label for="login-check">Are You A Member?</label>
+            </div>
+        </div>
+        <div class="input-box">
+            <button class="btn" onclick="checkEligibility()">Check Eligibility</button>
+            <i class='bx bx-right-arrow-alt bx-fade-left' ></i>
+        </div>
+        <p id="result"></p>
+    </div>
+    </form>
+    </section>
+    <script src="/main.js"></script>
+</body>
+</html>
